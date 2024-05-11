@@ -1,4 +1,8 @@
 export default defineNuxtConfig({
+  components: {
+        global: true,
+        dirs: ['~/components']
+  },
   modules: ['@nuxtjs/tailwindcss', 'shadcn-nuxt','nuxt-icon'],
   shadcn: {
     /**
@@ -11,4 +15,10 @@ export default defineNuxtConfig({
      */
     componentDir: './components/ui'
   }
+  // components: [
+  //   {
+  //     path: '~/components',
+  //     pathPrefix: false,
+  //   },
+  // ],
 })
